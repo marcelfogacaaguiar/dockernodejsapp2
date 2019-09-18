@@ -10,7 +10,8 @@ node {
     stage('Build image') {
         /* This builds the actual image; synonymous to
          * docker build on the command line */
-
+        /* Remember, the docker.build parameter must be your registry.hub.docker.com repository.
+         * Otherwise, the docker push will failed */
         app = docker.build("marcelfogaca/dockernodejsapp2")
     }
     
