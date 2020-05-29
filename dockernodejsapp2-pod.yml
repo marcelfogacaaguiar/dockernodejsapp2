@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: dockernodejsapp2
+  labels:
+    name: dockernodejsapp2-b
+spec:
+  containers:
+  - name: nodejsapp2
+    image: marcelfogaca/dockernodejsapp2:latest
+    ports:
+    - containerPort: 3000
