@@ -4,11 +4,31 @@ version: '3.4'
 
 services:
   sample_1:
-    image: sampleapp2_web_1:latest
+    image: marcelfogaca/dockernodejsapp2:latest
     environment:
       - NODE_ENV=development
     command: npm start
     ports:
       - 3001:3000
+    #volumes:
+    #  - .:/app
+
+  sample_2:
+    image: marcelfogaca/dockernodejsapp2:latest
+    environment:
+      - NODE_ENV=development
+    command: npm start
+    ports:
+      - 3002:3000
+    #volumes:
+    #  - .:/app
+
+  sample_3:
+    image: marcelfogaca/dockernodejsapp2:latest
+    environment:
+      - NODE_ENV=development
+    command: npm start
+    ports:
+      - 3003:3000
     #volumes:
     #  - .:/app
