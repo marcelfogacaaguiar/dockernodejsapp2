@@ -4,7 +4,7 @@
 
 # Based on https://www.telerik.com/blogs/dockerizing-react-applications-for-continuous-integration
 
-FROM node:10.15.3
+FROM node:12.14.1
 
 USER root
 
